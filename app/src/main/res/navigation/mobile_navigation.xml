@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <action
+        android:id="@+id/action_global_to_splash_fragment"
+        app:destination="@id/splashFragment" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="co.il.pixelschallange.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_grid" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_grid"
+        android:name="co.il.pixelschallange.ui.grid.GridFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_grid" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="co.il.pixelschallange.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="co.il.pixelschallange.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

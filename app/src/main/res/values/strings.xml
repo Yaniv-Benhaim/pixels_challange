@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PixelsChallange</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Grid</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="invalid_grid_size_error">Please enter a valid grid size with a minimum of 1000</string>
+    <string name="found_islands" translatable="false">Found %s islands</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="solve">SOLVE</string>
+    <string name="restart">RESTART</string>
+    <string name="out_of_memory_error">Something went wrong.. maybe try a lower grid size</string>
+
+</resources>
